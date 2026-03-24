@@ -12,7 +12,7 @@ export default function Login({ onSwitchToSignup }) {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/login', {
+      const response = await fetch('/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
